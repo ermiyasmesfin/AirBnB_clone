@@ -179,7 +179,6 @@ $
 ## Authors
 <details>
     <summary>Ermiyas Mesfin</summary>
-    <summary>Brook Endale</summary>
     <ul>
     <li><a href="https://www.github.com/ermiyasmesfin">Github</a></li>
     <li><a href="ermiasmesfin00@gmail.com">e-mail</a></li>
