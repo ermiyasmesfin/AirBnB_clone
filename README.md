@@ -184,3 +184,10 @@ $
     <li><a href="ermiasmesfin00@gmail.com">e-mail</a></li>
     </ul>
 </details>
+<details>
+    <summary>Brook Endale</summary>
+    <ul>
+    <li><a href="https://www.github.com/Brook25">Github</a></li>
+    <li><a href="brookbekele24@gmail.com">e-mail</a></li>
+    </ul>
+</details>
