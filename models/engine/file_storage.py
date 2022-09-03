@@ -43,11 +43,17 @@ class FileStorage:
             json.dump(json_objects, f)
 
     def reload(self):
-        """deserializes the JSON file to __objects"""
-        try:
-            with open(self.__file_path, 'r') as f:
-                jo = json.load(f)
-            for key in jo:
-                self.__objects[key] = classes[jo[key]["__class__"]](**jo[key])
-        except:
-            pass
+        """ if (__file_path) exists deserializes JSON file to __objects
+            elif , do nothing. If the file not exist,
+        """
+        dic_obj = {}
+        FileStorage.__objects = {}
+        if (exists(FileStorage.__file_path)):
+            with open(FileStorage.__file_path, "r") as fil:
+                dic_obj = load(fil)
+                for key, value in dic_obj.items():
+                    class_nam = key.split(".")[0]
+                    if class_nam in name_class:
+                        FileStorage.__objects[key] = eval(class_nam)(**value)
+                    else:
+                        pass
